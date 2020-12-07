@@ -1,0 +1,138 @@
+<div class="jumbotron">
+  <div class="container">
+    <div class="row">
+      <div class="col-sm">
+       
+        <button type="button" class="btn btn-danger" data-toggle="modal" data-target="#exampleModal1">
+          User Deactivation
+        </button>
+
+      </div>
+      <div class="col-sm">
+        
+        <button type="button" class="btn btn-success" data-toggle="modal" data-target="#exampleModal">
+          User Activation
+        </button>
+      </div>
+      <div class="col-sm">
+       
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- 1 Modal -->
+<div class="modal fade" id="exampleModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+  <div class="modal-dialog" role="document">
+    <div class="modal-content">
+      <div class="modal-header" style="background-color: rgba(226, 224, 224, 0.616);">
+        <h5 class="modal-title" id="exampleModalLabel" style="color: grey;">User Activation</h5>
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+          <span aria-hidden="true">&times;</span>
+        </button>
+      </div>
+      <div class="modal-body">
+      
+        <div class="row">
+          <div class="col-6">
+            <h5 style="color: grey;">User name</h5>
+            <br>
+            <h5 style="color: grey;">Moblie</h5>
+            <br>
+            <h5 style="color: grey;">Existing Plan name</h5>
+            <br>
+            <h5 style="color: grey;">Expire date</h5>
+            <br>
+            <h5 style="color: grey;">Plans</h5>
+            <br>
+
+          </div>
+          <div class="col">
+            <h5 style="color: blue;">SS@gmail.com</h5>
+            <br>
+            <h5 style="color: GREY;">9000000000</h5>
+            <br>
+            <h5 style="color: GREY;">1 Month</h5>
+            <br>
+            <input class="form-control" type="date" value="2011-08-19" id="example-date-input">
+            <br>
+            <select class="custom-select mb-2 mr-sm-2 mb-sm-0" id="inlineFormCustomSelect">
+              <option selected>Select a Plan</option>
+              <option value="1">1 Months</option>
+              <option value="2">6 Months</option>
+              <option value="3">1 Year</option>
+            </select>
+            <br><br><br><br><br>
+          </div>
+          <div class="col">
+           
+          </div>
+        </div>
+
+
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-primary">Activate</button>
+        <button type="button" class="btn btn-secondary" data-dismiss="modal">Cancel</button>
+        
+      </div>
+    </div>
+  </div>
+</div>
+<!-- Modal over-->
+
+<!-- 2 Modal -->
+<div class="modal fade" id="exampleModal1" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+  <div class="modal-dialog" role="document">
+    <div class="modal-content">
+      <div class="modal-header" style="background-color: rgba(226, 224, 224, 0.616);">
+        <h5 class="modal-title" id="exampleModalLabel" style="color: grey;">User Deactivate</h5>
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+          <span aria-hidden="true">&times;</span>
+        </button>
+      </div>
+      <div class="modal-body">
+        <div class="row">
+          <div class="col-6">
+            <h5 style="color: grey;">User name</h5>
+            <br>
+            <h5 style="color: grey;">Moblie</h5>
+            <br>
+            <h5 style="color: grey;">Existing Plan name</h5>
+            <br>
+            <h5 style="color: grey;">Expire date</h5>
+            <br>
+            
+
+          </div>
+          <div class="col">
+            <h5 style="color: blue;">SS@gmail.com</h5>
+            <br>
+            <h5 style="color: GREY;">9000000000</h5>
+            <br>
+            <h5 style="color: GREY;">1 Month</h5>
+            <br>
+            <input class="form-control" type="date" value="2011-08-19" id="example-date-input">
+            <br>
+            
+            <br><br><br><br><br>
+          </div>
+          <div class="col">
+           
+          </div>
+        </div>
+
+
+      
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-primary">Deactivate</button>
+        <button type="button" class="btn btn-secondary" data-dismiss="modal">Cancel</button>
+        
+      </div>
+    </div>
+  </div>
+</div>
+<!-- 2 Modal over-->
+
+<router-outlet></router-outlet>
